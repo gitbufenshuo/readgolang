@@ -30,3 +30,5 @@ func main() {
 ```
 main go routine
 ```
+
+# 看源码，要尽情的使用 panic，以便看出调用路径。。。

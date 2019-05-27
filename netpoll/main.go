@@ -22,6 +22,11 @@ func Server(ip, port string) {
 		os.Exit(0)
 	}
 	fmt.Println("ready for accept")
+	go func() {
+		time.Sleep(time.Second * 3)
+		fmt.Println("ready for accept    333")
+		l.Accept()
+	}()
 	{
 		coo, err := l.Accept()
 		if err != nil {
